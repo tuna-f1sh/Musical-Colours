@@ -1,0 +1,19 @@
+******Musical Colours*********
+
+I created these scripts to create a musical display using the RGB LED light strip in my van.
+Details of the circuit used and output examples can be found here: 
+
+http://engineer.john-whittington.co.uk/2012/06/musical-rainbows-in-the-van/
+
+John Whittington, 2012 - @j_whittington
+******************************
+
+BeatListener.pde - Required for minim to run BeatDetect and FFT. Must be in same directory as other files.
+
+MusicalColours.pde - The main script. Used to create a dynamic colour depending on the amplitude of 3 frequency ranges (bass, mid and tre) in the
+music
+
+MusicalFlash.pde - Simply uses BeatDetect to flash all the LEDs with the beat.
+
+AudioLED.ino - An Arduino sketch that does not require serial from a computer to vary the brightness of
+the LEDs according to the amplitude of an input sound.
